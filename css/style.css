@@ -483,7 +483,11 @@ body::after{
   font-weight:bold;
   cursor:pointer;
 }
-
+.resume-modal iframe{
+  border:none;
+  border-radius:20px;
+  background:white;
+}
 /* =========================
    CONTACT
 ========================= */
@@ -500,9 +504,15 @@ body::after{
   color:#d1d5db;
 }
 
+
 .contact-box a{
-  color:#8b5cf6;
+  color:#ffffff;
   text-decoration:none;
+  font-weight:500;
+}
+
+.contact-box a:hover{
+  color:#8b5cf6;
 }
 
 /* =========================
