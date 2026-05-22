@@ -346,7 +346,88 @@ window.onclick = function(event){
   }
 
 };
+// ==========================
+// PROFILE MODAL
+// ==========================
 
+function openProfile(){
+
+  document.getElementById(
+    "profileModal"
+  ).style.display = "flex";
+
+}
+
+function closeProfile(){
+
+  document.getElementById(
+    "profileModal"
+  ).style.display = "none";
+
+}
+
+
+// ==========================
+// RESUME MODAL
+// ==========================
+
+function openResume(){
+
+  document.getElementById(
+    "resumeModal"
+  ).style.display = "flex";
+
+}
+
+function closeResume(){
+
+  document.getElementById(
+    "resumeModal"
+  ).style.display = "none";
+
+}
+
+
+// ==========================
+// CLOSE OUTSIDE CLICK
+// ==========================
+
+window.addEventListener('click', function(event){
+
+  const profileModal =
+  document.getElementById(
+    "profileModal"
+  );
+
+  const resumeModal =
+  document.getElementById(
+    "resumeModal"
+  );
+
+  const certificateModal =
+  document.getElementById(
+    "certificateModal"
+  );
+
+  if(event.target === profileModal){
+
+    profileModal.style.display = "none";
+
+  }
+
+  if(event.target === resumeModal){
+
+    resumeModal.style.display = "none";
+
+  }
+
+  if(event.target === certificateModal){
+
+    certificateModal.style.display = "none";
+
+  }
+
+});
 
 // ==========================
 // FADE BODY ON LOAD
