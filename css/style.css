@@ -492,27 +492,114 @@ body::after{
    CONTACT
 ========================= */
 
+/* =========================
+   CONTACT SECTION
+========================= */
+
 .contact-box{
   background:rgba(255,255,255,0.05);
   padding:50px;
   border-radius:25px;
   text-align:center;
+  max-width:800px;
+  margin:auto;
+  box-shadow:0 0 25px rgba(139,92,246,0.15);
 }
+
+/* CONTACT TEXT */
 
 .contact-box p{
-  margin-bottom:15px;
-  color:#d1d5db;
+  margin-bottom:18px;
+  color:#ffffff;
+  font-size:1rem;
+  line-height:1.8;
 }
 
+/* EMAIL LINK */
 
 .contact-box a{
   color:#ffffff;
   text-decoration:none;
   font-weight:500;
+  transition:0.3s;
+  word-break:break-word;
 }
 
 .contact-box a:hover{
   color:#8b5cf6;
+}
+
+/* CONTACT BUTTONS */
+
+.contact-buttons{
+  margin-top:35px;
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+/* BUTTON COMMON */
+
+.contact-buttons .btn-primary,
+.contact-buttons .btn-secondary{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:160px;
+  padding:14px 28px;
+  border-radius:12px;
+  font-size:1rem;
+  font-weight:600;
+  text-decoration:none;
+  cursor:pointer;
+  transition:0.4s;
+}
+
+/* PRIMARY BUTTON */
+
+.contact-buttons .btn-primary{
+  background:#8b5cf6;
+  color:#ffffff;
+  border:none;
+}
+
+.contact-buttons .btn-primary:hover{
+  transform:translateY(-5px);
+  box-shadow:0 0 25px rgba(139,92,246,0.45);
+}
+
+/* SECONDARY BUTTON */
+
+.contact-buttons .btn-secondary{
+  border:1px solid #8b5cf6;
+  color:#ffffff;
+  background:transparent;
+}
+
+.contact-buttons .btn-secondary:hover{
+  background:#8b5cf6;
+  transform:translateY(-5px);
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:600px){
+
+  .contact-box{
+    padding:35px 25px;
+  }
+
+  .contact-buttons{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .contact-buttons .btn-primary,
+  .contact-buttons .btn-secondary{
+    width:100%;
+  }
+
 }
 
 /* =========================
