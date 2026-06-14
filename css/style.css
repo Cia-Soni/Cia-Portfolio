@@ -232,7 +232,7 @@ body::after{
 }
 
 .about-image img{
-  width:20%;
+  width:70%;
   border-radius:25px;
   object-fit:cover;
   box-shadow:0 0 40px rgba(139,92,246,0.3);
